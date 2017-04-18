@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
+
+//api routes
+//collection routes
+Route::get('/orders', 'OrdersController@index' );
+Route::post('/orders', 'OrdersController@create');
+//singular routes
+Route::get('/orders/{id}', 'OrdersController@show');
+Route::put('/orders/{id}', 'OrdersController@update');
+Route::delete('/orders/{id}', 'OrdersController@destroy');
