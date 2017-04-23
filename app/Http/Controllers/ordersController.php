@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Orders;
-use Illuminate\Support\Facades\Response
+use Illuminate\Support\Facades\Response;
 use Illuminate\Http\Request;
 
 class ordersController extends Controller
@@ -13,7 +13,7 @@ class ordersController extends Controller
 {
   // GET request
   // list orders
-  $orders = Order::all();
+  $orders = orders::all();
   return Response::json($orders);
 }
 
@@ -22,7 +22,7 @@ public function create(Request $request)
 {
 //POST /orders
 //create new order
-Order::create($request->all());
+order::create($request->all());
 return Response::json(['created => true']);
 
 }
