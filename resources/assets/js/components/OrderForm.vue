@@ -1,10 +1,12 @@
 <template>
   <div class="ContactForm">
-    <input type="text" v-model="first" />
-    <input type="text" v-model="last" />
-    <input type="text" v-model="phone" />
-    <input type="checkbox" v-model="favorite" />
-    <button class="btn btn-primary" @click="create" :disabled="loading">Create Contact</button>
+    <input type="text" v-model="customer" />
+    <input type="text" v-model="deadline" />
+    <input type="text" v-model="flavor" />
+    <input type="text" v-model="size" />
+    <input type="text" v-model="number" />
+    <input type="checkbox" v-model="completed" />
+    <button class="btn btn-primary" @click="create" :disabled="loading">Create Order</button>
   </div>
 </template>
 
@@ -17,10 +19,12 @@ export default {
   },
   data() {
     return {
-      first: '',
-      last: '',
-      phone: '',
-      favorite: false,
+      customer: '',
+      deadline: '',
+      flavor: '',
+      size: '',
+      number: '',
+      completed: false,
       loading: false
     }
   },
