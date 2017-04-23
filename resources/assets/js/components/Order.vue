@@ -88,8 +88,8 @@ export default {
     cancel () {
       console.log('Order -> cancel');
       this.customer = this.order.customer;
-      this.deadline: this.order.deadline;
-      this.flavor: this.order.flavor;
+      this.deadline = this.order.deadline;
+      this.flavor =  this.order.flavor;
     }
   }
 }

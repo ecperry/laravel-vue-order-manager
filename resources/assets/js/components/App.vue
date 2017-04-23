@@ -5,7 +5,7 @@
     <OrderForm @created="fetch"></OrderForm>
 
     <div class="ContactList" v-show="orders.length > 0">
-      <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Contact>
+      <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
     <p v-show="orders.length === 0">You do not have any orders yet.</p>
 
