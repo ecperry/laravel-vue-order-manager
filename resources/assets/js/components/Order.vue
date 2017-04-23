@@ -1,7 +1,7 @@
 <template>
   <div class="Contact panel panel-default">
     <div class="panel-heading">
-      <a :href="'tel:' + contact.phone">
+      <a :href="'tel:' + order.deadline">
         <i class="glyphicon glyphicon-earphone"></i>
       </a>
 
@@ -15,13 +15,13 @@
     </div>
     <div class="panel-body">
       <div class="live" v-show="!editing">
-        {{ contact.first }} {{ contact.last }}
+        {{ order.customer }} {{ order.deadline }}
       </div>
       <div class="editing" v-show="editing">
         <p>
-          <input type="text" v-model="first" />
-          <input type="text" v-model="last" />
-          <input type="text" v-model="phone" />
+          <input type="text" v-model="customer" />
+          <input type="text" v-model="deadline" />
+          <input type="text" v-model="flavor" />
         </p>
         <p>
           <button class="btn btn-success" @click="save">Save</button>
@@ -36,61 +36,60 @@
 import axios from 'axios';
 export default {
   props: [
-    'contact'
+    'order'
   ],
   data () {
     return {
-      first: this.contact.first,
-      last: this.contact.last,
-      phone: this.contact.phone,
+      customer: this.customer,
+      deadline: this.deadline,
+      flavor: this.flavor,
       editing: false,
       loading: false
     }
   },
   methods: {
     remove () {
-      console.log('Contact -> remove');
+      console.log('Order -> remove');
       this.loading = true;
-      axios.delete(`/contacts/${this.contact.id}`)
+      axios.delete(`/orders/${this.orders.id}`)
         .then((response) => {
-          console.log('Contact -> remove success');
+          console.log('Order -> remove success');
           this.$emit('deleted')
           this.loading = false;
         })
         .catch((error) => {
-          console.log('Contact -> remove error');
+          console.log('Order -> remove error');
           // stop deleting and dont remove from the dom
           // tell the user deletion failed
         });
     },
     save () {
-      console.log('Contact -> save');
-      axios.put(`/contacts/${this.contact.id}`, {
-          first: this.first,
-          last: this.last,
-          phone: this.phone
+      console.log('Order -> save');
+      axios.put(`/orders/${this.order.id}`, {
+        customer: this.customer,
+        deadline: this.deadline,
+        flavor: this.flavor
         })
         .then((response) => {
-          console.log('Contact -> save success');
+          console.log('Order -> save success');
           this.$emit('updated', {
-            contact: this.contact,
-            first: this.first,
-            last: this.last,
-            phone: this.phone
+            order: this.order,
+            customer: this.customer,
+            deadline: this.deadline,
+            flavor: this.flavor
           });
           this.editing = false;
         })
         .catch((error) => {
-          console.log('Contact -> save error');
+          console.log('Order -> save error');
           //show the user that it couldn't be updated
         });
     },
     cancel () {
-      console.log('Contact -> cancel');
-      this.first = this.contact.first;
-      this.last = this.contact.last;
-      this.phone = this.contact.phone;
-      this.editing = false;
+      console.log('Order -> cancel');
+      this.customer = this.order.customer;
+      this.deadline: this.order.deadline;
+      this.flavor: this.order.flavor;
     }
   }
 }

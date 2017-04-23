@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     create () {
-      console.log('ContactForm -> create');
+      console.log('OrderForm -> create');
       if (this.loading) {
         alert('request is already being made');
         return false;
@@ -39,29 +39,34 @@ export default {
       this.sendRequest();
     },
     sendRequest () {
-      axios.post('/contacts', {
-        first: this.first,
-        last: this.last,
-        phone: this.phone,
-        favorite: this.favorite
+      axios.post('/orders', {
+        customer: this.customer,
+        deadline: this.deadline,
+        flavor: this.flavor,
+        size: this.size,
+        number: this.number,
+        completed: this.completed
       })
       .then((response) => {
-        console.log('ContactForm -> sendRequest success');
+        console.log('OrderForm -> sendRequest success');
         console.log(response.data);
         this.loading = false;
         this.reset();
         this.$emit('created');
       })
       .catch((error) => {
-        console.error('ContactForm -> sendRequest error');
+        console.error('OrderForm -> sendRequest error');
         // show an error message
       });
     },
     reset () {
-      this.first = '';
-      this.last = '';
-      this.phone = '';
-      this.favorite = false;
+
+      this.customer,
+      this.deadline,
+      this.flavor,
+      this.size,
+      this.number,
+      this.completed
     }
   }
 };

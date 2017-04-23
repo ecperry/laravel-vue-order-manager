@@ -4,10 +4,10 @@
 
     <OrderForm @created="fetch"></OrderForm>
 
-    <div class="ContactList" v-show="contacts.length > 0">
-      <Order v-for="(person, index) in contacts" :key="index" :contact="person" @updated="update" @deleted="remove(index)"></Contact>
+    <div class="ContactList" v-show="orders.length > 0">
+      <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Contact>
     </div>
-    <p v-show="contacts.length === 0">You do not have any contacts yet.</p>
+    <p v-show="orders.length === 0">You do not have any orders yet.</p>
 
     <transition name="fade">
       <MainLoader v-if="loading"></MainLoader>
@@ -22,13 +22,13 @@ import OrderForm from './OrderForm';
 import MainLoader from './MainLoader';
 export default {
   components: {
-    Contact,
-    ContactForm,
+    Order,
+    OrderForm,
     MainLoader
   },
   data () {
     return {
-      contacts: [],
+      orders: [],
       loading: false
     }
   },
@@ -39,11 +39,11 @@ export default {
     fetch () {
       console.log('App -> fetch');
       this.loading = true;
-      axios.get('/contacts')
+      axios.get('/orders')
         .then((response) => {
           console.log('App -> fetch success');
           console.log(response.data);
-          this.contacts = response.data;
+          this.orders = response.data;
           this.loading = false;
         })
         .catch((response) => {
@@ -54,14 +54,14 @@ export default {
     },
     update (data) {
       // this.fetch();
-      var i = this.contacts.indexOf(data.contact);
+      var i = this.orders.indexOf(data.order);
       for (var d in data) {
-        this.contacts[i][d] = data[d];
+        this.orders[i][d] = data[d];
       }
     },
     remove (i) {
       console.log(`App -> remove ID: ${i}`);
-      this.contacts.splice(i, 1);
+      this.orders.splice(i, 1);
     }
   }
 }
