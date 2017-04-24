@@ -1,8 +1,9 @@
 <template>
   <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <img class = "logo" src = "logo.png">
-    <h1 class="logo"> OrderUp </h1>
-    <h2 class ="subtitle"> serve it </h2>
+    <h1 class="title"> OrderUp </h1>
+    <h2 class ="subtitle"> serve it better </h2>
   </div>
 </template>
 
@@ -12,21 +13,20 @@ export default {
 </script>
 
 <style>
-.start {
-font-size: 35pt;
-}
 .title {
-height: auto;
-width: auto;
-max-width: 350px;
-align: center;
-padding-top: 20%;
-padding-left: 8%;
-padding-bottom: 0;
+font-size: 38px ;
+text-align: left;
+font-family: 'Francois One', sans-serif;
 }
-.Top {
-  text-align: center;
-  padding-bottom: 20%;
-  font-size: 24pt;
+.subtitle {
+  font-size: 20px ;
+  text-align: left;
+}
+.logo {
+  width: 100px;
+  float: left;
+}
+.Header {
+  padding-bottom: 5%;
 }
 </style>

@@ -1,9 +1,8 @@
 <template>
+  <div id="app">
   <div class="container">
-    <h4>Test</h4>
-
+    <Header></Header>
     <OrderForm @created="fetch"></OrderForm>
-
     <div v-show="orders.length > 0">
       <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
@@ -13,18 +12,22 @@
       <MainLoader v-if="loading"></MainLoader>
     </transition>
   </div>
+</div>
 </template>
 
 <script>
 import axios from 'axios';
+import Header from './Header';
 import Order from './Order';
 import OrderForm from './OrderForm';
 import MainLoader from './MainLoader';
 export default {
   components: {
+    Header,
     Order,
     OrderForm,
-    MainLoader
+    MainLoader,
+
   },
   data () {
     return {
@@ -68,6 +71,9 @@ export default {
 </script>
 
 <style>
+#app {
+  background-color: white;
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
