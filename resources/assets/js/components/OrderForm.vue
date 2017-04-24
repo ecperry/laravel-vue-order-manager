@@ -1,5 +1,5 @@
 <template>
-  <div class="ContactForm">
+  <div class="OrderForm">
     <input type="text" v-model="customer" />
     <input type="text" v-model="deadline" />
     <input type="text" v-model="flavor" />

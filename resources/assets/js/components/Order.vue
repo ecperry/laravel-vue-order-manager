@@ -1,5 +1,5 @@
 <template>
-  <div class="Contact panel panel-default">
+  <div class="Order panel panel-default">
     <div class="panel-heading">
       <a :href="'tel:' + order.deadline">
         <i class="glyphicon glyphicon-earphone"></i>
