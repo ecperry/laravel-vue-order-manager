@@ -39,6 +39,7 @@ padding-top: 10px;
   align-items: center;
 }
 .Welcome {
+  padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
 }

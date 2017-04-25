@@ -4,16 +4,18 @@
     <Welcome></Welcome>
     <Header></Header>
     <OrderForm @created="fetch"></OrderForm>
+    <Order></Order>
     <div v-show="orders.length > 0">
+
       <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
     <p v-show="orders.length === 0">You do not have any orders yet.</p>
-
     <transition name="fade">
       <MainLoader v-if="loading"></MainLoader>
     </transition>
-  </div>
+
   <Footer></Footer>
+  </div>
 </div>
 </template>
 
