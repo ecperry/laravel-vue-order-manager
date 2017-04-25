@@ -1,6 +1,7 @@
 <template>
   <div id="app">
   <div class="container">
+    <Welcome></Welcome>
     <Header></Header>
     <OrderForm @created="fetch"></OrderForm>
     <div v-show="orders.length > 0">
@@ -12,21 +13,26 @@
       <MainLoader v-if="loading"></MainLoader>
     </transition>
   </div>
+  <Footer></Footer>
 </div>
 </template>
 
 <script>
 import axios from 'axios';
+import Welcome from './Welcome';
 import Header from './Header';
 import Order from './Order';
 import OrderForm from './OrderForm';
 import MainLoader from './MainLoader';
+import Footer from './Footer'
 export default {
   components: {
+    Welcome,
     Header,
     Order,
     OrderForm,
     MainLoader,
+    Footer
 
   },
   data () {

@@ -1,11 +1,19 @@
 <template>
   <div class="OrderForm">
-    <input type="text" v-model="customer" />
-    <input type="text" v-model="deadline" />
-    <input type="text" v-model="flavor" />
-    <input type="text" v-model="size" />
-    <input type="text" v-model="number" />
-    <input type="checkbox" v-model="completed" />
+    <label for="customer"> Customer</label>
+    <input id= "customer" type="text" v-model="customer" />
+
+    <label for="customer">Deadline</label>
+    <input id = "deadline" type="text" v-model="deadline" />
+
+    <label for="customer">Flavor</label>
+    <input id = "flavor" type="text" v-model="flavor" />
+
+    <label for="customer">Size</label>
+    <input id = "size" type="text" v-model="size"/>
+
+    <label for="customer">Number</label>
+    <input id = "number" type="text" v-model="number" />
     <button class="btn btn-primary" @click="create" :disabled="loading">Create Order</button>
   </div>
 </template>
@@ -60,7 +68,6 @@ export default {
       });
     },
     reset () {
-
       this.customer,
       this.deadline,
       this.flavor,

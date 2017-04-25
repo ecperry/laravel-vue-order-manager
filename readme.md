@@ -1,8 +1,8 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## About OrderUp
+## About OrderUp!
 
-Welcome to OrderUp, a front-end solution for managing food orders. Here, you'll find an easy management system to keep track of customers, recipes, and orders.
+Welcome to OrderUp!, a front-end solution for managing food orders. Here, you'll find an easy management system to keep track of customers, recipes, and orders.
 
 To get started and run the project on your own machine:
 
@@ -15,3 +15,4 @@ To get started and run the project on your own machine:
 - Created with [Laravel](https://laravel.com/).
 - Built with [Vue.js](https://vuejs.org/v2/guide/).
 - Code inspired by projects from [Seth Wright](https://github.com/asethwright/laravel-vue-contact-manager).
+-API Documentation found on [Gitbook](https://www.gitbook.com/book/ecperry/orderup-api-documentation/)
