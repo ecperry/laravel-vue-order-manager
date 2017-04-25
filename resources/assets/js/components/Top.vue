@@ -1,5 +1,5 @@
 <template>
-  <div class="Header">
+  <div class="Top">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <img class = "logo" src = "logo.png">
     <h1 class="title"> OrderUp!</h1>
@@ -30,7 +30,7 @@ margin-bottom: 0px;
   width: 100px;
   float: left;
 }
-.Header {
+.Top {
   padding-bottom: 5%;
 }
 </style>

@@ -2,19 +2,19 @@
   <div id="app">
   <div class="container">
     <Welcome></Welcome>
-    <Header></Header>
+    <Top></Top>
     <OrderForm @created="fetch"></OrderForm>
-    <Order></Order>
-    <div v-show="orders.length > 0">
 
+    <div v-show="orders.length > 0">
       <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
+
     <p v-show="orders.length === 0">You do not have any orders yet.</p>
     <transition name="fade">
       <MainLoader v-if="loading"></MainLoader>
     </transition>
 
-  <Footer></Footer>
+  <Bottom></Bottom>
   </div>
 </div>
 </template>
@@ -22,19 +22,19 @@
 <script>
 import axios from 'axios';
 import Welcome from './Welcome';
-import Header from './Header';
+import Top from './Top';
 import Order from './Order';
 import OrderForm from './OrderForm';
 import MainLoader from './MainLoader';
-import Footer from './Footer'
+import Bottom from './Bottom'
 export default {
   components: {
     Welcome,
-    Header,
+    Top,
     Order,
     OrderForm,
     MainLoader,
-    Footer
+    Bottom
 
   },
   data () {

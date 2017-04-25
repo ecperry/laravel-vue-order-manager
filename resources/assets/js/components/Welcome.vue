@@ -1,6 +1,7 @@
 <template>
   <div class="Welcome">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
+    <!--<div class="ok" v-show="ok"> -->
     <img class = "pic" src = "logo.png">
     <h1 class="name"> OrderUp! </h1>
     <h2 class ="tag"> serve it better </h2>
@@ -15,6 +16,7 @@
       backend of a database.
     </p>
   </div>
+  <!---</div> -->
 </template>
 
 <script>

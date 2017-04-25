@@ -1,10 +1,8 @@
 <template>
   <div class="Order panel panel-default">
-    <div class="panel-heading">
-      <a :href="'tel:' + order.deadline">
-        <i class="glyphicon glyphicon-earphone"></i>
-      </a>
 
+    <h3>Orders</h3>
+    <div class="panel-heading">
       <a class="tool" href="#" @click.prevent="remove">
         <i class="glyphicon glyphicon-remove pull-right"></i>
       </a>
@@ -13,10 +11,12 @@
         <i class="glyphicon glyphicon-pencil pull-right"></i>
       </a>
     </div>
+
     <div class="panel-body">
       <div class="live" v-show="!editing">
         {{ order.customer }} {{ order.deadline }}
       </div>
+      
       <div class="editing" v-show="editing">
         <p>
           <input type="text" v-model="customer" />
@@ -98,5 +98,8 @@ export default {
 <style>
 .tool > i {
   margin-left: 15px;
+}
+
+.Order {
 }
 </style>

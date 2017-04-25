@@ -4,36 +4,43 @@
     <div class="col-sm-6">
       <div class="form-group">
         <label for="customer">customer</label>
-        <input class="form-control" type="text" name="last" id="customer"  placeholder="ex.) Jane Doe and Co." />
+        <input class="form-control" type="text" name="last" id="customer" v-model="customer" placeholder="ex.) Jane Doe and Co." />
       </div>
     </div>
 
     <div class="col-sm-6">
       <div class="form-group">
-        <label for="customer">deadline</label>
-        <input class="form-control" id = "deadline" type="text" v-model="deadline" placeholder="ex.) 02/14/18 @ 2pm"/>
+        <label for="deadline">deadline</label>
+        <input class="form-control" id="deadline" type="text" v-model="deadline" placeholder="ex.) 02/14/18 @ 2pm"/>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="form-group">
         <label for="flavor">flavor</label>
-        <input  class="form-control" id = "flavor" type="text" v-model="flavor" placeholder="ex.) vanilla"/>
+        <input  class="form-control" id="flavor" type="text" v-model="flavor" placeholder="ex.) vanilla"/>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="form-group">
         <label for="size">size</label>
-        <input class="form-control" id = "size" type="text" v-model="size" placeholder="ex.) mini"/>
+        <input class="form-control" id="size" type="text" v-model="size" placeholder="ex.) mini"/>
       </div>
     </div>
 
     <div class="col-sm-4">
       <div class="form-group">
         <label for="number">number</label>
-        <input  class="form-control" id = "number" type="text" v-model="number" placeholder="ex.) 15 boxes"/>
+        <input  class="form-control" id="number" type="text" v-model="number" placeholder="ex.) 15 boxes"/>
       </div>
+    </div>
+
+    <div class="col-sm-12">
+    <div class="form-group">
+      <label for="completed">completed?</label>
+      <input id="completed" type="checkbox" v-model="completed" />
+    </div>
     </div>
 
     <div class="col-lg-12">
@@ -41,6 +48,8 @@
         <button class="btn btn-primary" @click="create" :disabled="loading"><colgroup></colgroup>create order</button>
       </div>
     </div>
+
+
   </div>
 </template>
 
@@ -123,6 +132,5 @@ padding-bottom: 5px;
 btn-primary {
 float: right;
 }
-.OrderForm {
-}
+
 </style>
