@@ -16,7 +16,7 @@
       <div class="live" v-show="!editing">
         {{ order.customer }} {{ order.deadline }}
       </div>
-      
+
       <div class="editing" v-show="editing">
         <p>
           <input type="text" v-model="customer" />
@@ -40,9 +40,9 @@ export default {
   ],
   data () {
     return {
-      customer: this.customer,
-      deadline: this.deadline,
-      flavor: this.flavor,
+      customer: this.order.customer,
+      deadline: this.order.deadline,
+      flavor: this.order.flavor,
       editing: false,
       loading: false
     }
@@ -51,7 +51,7 @@ export default {
     remove () {
       console.log('Order -> remove');
       this.loading = true;
-      axios.delete(`/orders/${this.orders.id}`)
+      axios.delete(`/orders/${this.order.id}`)
         .then((response) => {
           console.log('Order -> remove success');
           this.$emit('deleted')
@@ -90,6 +90,7 @@ export default {
       this.customer = this.order.customer;
       this.deadline = this.order.deadline;
       this.flavor =  this.order.flavor;
+      this.editing = false;
     }
   }
 }
@@ -98,8 +99,5 @@ export default {
 <style>
 .tool > i {
   margin-left: 15px;
-}
-
-.Order {
 }
 </style>

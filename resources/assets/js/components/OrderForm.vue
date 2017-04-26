@@ -43,12 +43,13 @@
     </div>
     </div>
 
-    <div class="col-lg-12">
+<button class="btn btn-primary" @click="create" :disabled="loading"><colgroup></colgroup>create order</button>
+    <!-- <div class="col-lg-12">
       <div class="form-group">
-        <button class="btn btn-primary" @click="create" :disabled="loading"><colgroup></colgroup>create order</button>
+
       </div>
     </div>
-
+ -->
 
   </div>
 </template>

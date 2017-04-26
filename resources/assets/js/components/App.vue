@@ -8,13 +8,14 @@
     <div v-show="orders.length > 0">
       <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
-
     <p v-show="orders.length === 0">You do not have any orders yet.</p>
+
+    <Bottom></Bottom>
+
     <transition name="fade">
       <MainLoader v-if="loading"></MainLoader>
     </transition>
 
-  <Bottom></Bottom>
   </div>
 </div>
 </template>
