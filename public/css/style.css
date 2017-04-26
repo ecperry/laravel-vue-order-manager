@@ -1,35 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One);@charset "UTF-8";
 
-h1 {
+
+.color1 {
+  background-color: #F40643;
 }
-h2 {
+.color2 {
+  background-color: #F567B2;
 }
-h3 {
+
+.color3 {
+  background-color: #FDDFF2;
 }
-h4 {
+
+.color4 {
+  background-color: #04DADA;
 }
-h5 {
+
+.color5{
+  background-color: #CCFAFA;
+  color: black;
 }
-p {
+
+.color6 {
+  background-color: #FFFFFF;
+  border:solid;
+  border-color: black ;
+  border-width: thin;
+  color: black;
 }
-p.lead {
+.color7 {
+  background-color: black;
 }
-p.light {
+.color8 {
+  background-color: grey;
 }
-.small {
+.color9 {
+  background-color: lightgrey;
 }
-.medium {
+.color1 , .color2 , .color3, .color4, .color5, .color6, .color7, .color8, .color9 {
+  padding: 50px 30px 30px 30px;
+  margin: 15px 15px 15px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
-.large {
-}
-.text {
-}
-.select {
-}
-.textarea {
-}
-ul {
-}
-ol {
+.color1 , .color2 , .color3, .color4, .color7, .color8, .color9 {
+color: white;
 }
