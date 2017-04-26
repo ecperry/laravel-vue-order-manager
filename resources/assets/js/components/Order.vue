@@ -1,7 +1,7 @@
 <template>
   <div class="Order panel panel-default">
 
-    <h3>Orders</h3>
+    <h3 >{{ this.customer }}</h3>
     <div class="panel-heading">
       <a class="tool" href="#" @click.prevent="remove">
         <i class="glyphicon glyphicon-remove pull-right"></i>
@@ -97,7 +97,13 @@ export default {
 </script>
 
 <style>
+
 .tool > i {
   margin-left: 15px;
+}
+
+.panel {
+padding: 10px;
+margin: none;
 }
 </style>
