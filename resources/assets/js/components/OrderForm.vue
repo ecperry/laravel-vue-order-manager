@@ -33,7 +33,7 @@
     <div class="col-sm-4">
       <div class="form-group">
         <label for="number">number</label>
-        <input  class="form-control" id="number" type="text" v-model="number" placeholder="ex.) 15 boxes"/>
+        <input  class="form-control" id="number" type="text" v-model="number" placeholder="ex.) 15"/>
       </div>
     </div>
 
