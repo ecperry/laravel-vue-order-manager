@@ -1,5 +1,6 @@
 <template>
   <div class="OrderForm">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <h3>create a new order</h3>
     <div class="col-sm-6">
       <div class="form-group">
@@ -43,7 +44,7 @@
     </div>
     </div>
 
-<button class="btn btn-primary" @click="create" :disabled="loading"><colgroup></colgroup>create order</button>
+<button class="btn btn-primary" @click="create" :disabled="loading">create order</button>
 
   </div>
 </template>

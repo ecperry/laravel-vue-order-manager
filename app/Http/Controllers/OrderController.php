@@ -30,7 +30,7 @@ public function update (Request $request, $id)
   // DELETE /orders/$id
   // update a single game
   $order = Order::find($id);
-  $success = $order->update($request->all());
+  $order->update($request->all());
   return Response::json(['updated' => true]);
 }
 
