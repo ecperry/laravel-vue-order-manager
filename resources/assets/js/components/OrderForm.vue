@@ -44,12 +44,6 @@
     </div>
 
 <button class="btn btn-primary" @click="create" :disabled="loading"><colgroup></colgroup>create order</button>
-    <!-- <div class="col-lg-12">
-      <div class="form-group">
-
-      </div>
-    </div>
- -->
 
   </div>
 </template>
@@ -57,6 +51,7 @@
 <script>
 import axios from 'axios';
 import Loader from './Loader';
+
 export default {
   components: {
     Loader
@@ -104,12 +99,12 @@ export default {
       });
     },
     reset () {
-      this.customer,
-      this.deadline,
-      this.flavor,
-      this.size,
-      this.number,
-      this.completed
+      this.customer = '';
+      this.deadline = '';
+      this.flavor = '';
+      this.size = '';
+      this.number = '';
+      this.completed = false;
     }
   }
 };

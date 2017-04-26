@@ -17,9 +17,9 @@ Route::get('/', function () {
 
 //api routes
 //collection routes
-Route::get('/orders', 'OrdersController@index' );
-Route::post('/orders', 'OrdersController@create');
+Route::get('/orders', 'OrderController@index' );
+Route::post('/orders', 'OrderController@create');
 //singular routes
-Route::get('/orders/{id}', 'OrdersController@show');
-Route::put('/orders/{id}', 'OrdersController@update');
-Route::delete('/orders/{id}', 'OrdersController@destroy');
+Route::get('/orders/{id}', 'OrderController@show');
+Route::put('/orders/{id}', 'OrderController@update');
+Route::delete('/orders/{id}', 'OrderController@destroy');
