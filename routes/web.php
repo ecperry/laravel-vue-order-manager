@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('app');
 });
+Route::get('/style', function(){
+  return view('style');
+});
 
 //api routes
 //collection routes

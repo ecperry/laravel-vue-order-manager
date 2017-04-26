@@ -5,7 +5,7 @@
       <a class="bottom" href="https://www.emilythecopywriter.com">Portfolio</a>
       <a class="bottom" href="https://ecperry.gitbooks.io/orderup-api-documentation/">API Documentation</a>
       <a class="bottom" href="https://github.com/ecperry/food-api">Credits</a>
-      <a class="bottom"href="https://localhost:8888/style">Style Guide</a>
+      <a class="bottom" href="/style">Style Guide</a>
     </div>
     <div class="bottom"></div>
   </div>
