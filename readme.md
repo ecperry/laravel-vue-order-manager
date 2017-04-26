@@ -15,4 +15,4 @@ To get started and run the project on your own machine:
 - Created with [Laravel](https://laravel.com/).
 - Built with [Vue.js](https://vuejs.org/v2/guide/).
 - Code inspired by projects from [Seth Wright](https://github.com/asethwright/laravel-vue-contact-manager).
--API Documentation found on [Gitbook](https://www.gitbook.com/book/ecperry/orderup-api-documentation/)
+- API Documentation found on [Gitbook](https://www.gitbook.com/book/ecperry/orderup-api-documentation/)
