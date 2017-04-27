@@ -22,8 +22,11 @@
 
     <div class="panel-body">
       <div class="live" v-show="!editing">
-        <p class="bold">DUE</p>
-         {{ order.deadline }}
+        <p class="bold" v-if="!completed">DUE  {{ order.deadline }}</p>
+
+      </div>
+      <div v-if="completed">
+        <p class = "done"> COMPLETED! </p>
       </div>
 
       <div class="editing" v-show="editing">
@@ -165,7 +168,13 @@ margin: 15px;
 
 .bold {
 font-weight: 800;
+color: red;
 
+}
+
+.done {
+color: green;
+font-weight: 900;
 }
 
 

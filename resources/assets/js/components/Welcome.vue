@@ -1,7 +1,10 @@
 <template>
-  <div class="Welcome">
+  <div class="Welcome" data-dismiss="alert">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <!--<div class="ok" v-show="ok"> -->
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <img class = "pic" src = "logo.png">
     <h1 class="name"> OrderUp! </h1>
     <h2 class ="tag"> serve it better </h2>
