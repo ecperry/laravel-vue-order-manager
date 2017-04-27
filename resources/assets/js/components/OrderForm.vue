@@ -46,6 +46,7 @@
 
 <button class="btn btn-primary" @click="create" :disabled="loading">create order</button>
 
+<h3>orders</h3>
   </div>
 </template>
 
@@ -124,10 +125,15 @@ color: white;
 padding-left: 15px;
 padding-top: 5px;
 padding-bottom: 5px;
+border-radius: 3px;
 }
 
 btn-primary {
 float: right;
 }
 
+.btn {
+  margin-bottom: 30px;
+
+}
 </style>

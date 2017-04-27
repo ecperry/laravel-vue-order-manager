@@ -1,27 +1,74 @@
 <template>
+  <div class="Order">
   <div class="Order panel panel-default">
+<div class="row">
+  <div class="panel-heading">
+      <div class="col-md-11">
+        <h3></h3>
+        <h3 v-show="!editing">{{ this.customer }}</h3>
+      </div>
+      </div>
 
-    <h3 >{{ this.customer }}</h3>
-    <div class="panel-heading">
-      <a class="tool" href="#" @click.prevent="remove">
-        <i class="glyphicon glyphicon-remove pull-right"></i>
+    <div class="col-md-1 cush">
+      <a class="tool " href="#" @click.prevent="editing = true" v-show="!editing">
+        <img style="width:20px;" src="edit.png">
       </a>
 
-      <a class="tool" href="#" @click.prevent="editing = true" v-show="!editing">
-        <i class="glyphicon glyphicon-pencil pull-right"></i>
+      <a class="tool" href="#" @click.prevent="remove" v-show="!editing">
+        <img style="width:30px;" src="remove.png">
       </a>
     </div>
+      </div>
 
     <div class="panel-body">
       <div class="live" v-show="!editing">
-        {{ order.customer }} {{ order.deadline }}
+        <p class="bold">DUE</p>
+         {{ order.deadline }}
       </div>
 
       <div class="editing" v-show="editing">
         <p>
-          <input type="text" v-model="customer" />
-          <input type="text" v-model="deadline" />
-          <input type="text" v-model="flavor" />
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="customer">customer</label>
+              <input class="form-control" type="text" name="last" id="customer" v-model="customer" placeholder="ex.) Jane Doe and Co." />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="deadline">deadline</label>
+              <input class="form-control" id="deadline" type="text" v-model="deadline" placeholder="ex.) 02/14/18 @ 2pm"/>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="flavor">flavor</label>
+              <input  class="form-control" id="flavor" type="text" v-model="flavor" placeholder="ex.) vanilla"/>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="size">size</label>
+              <input class="form-control" id="size" type="text" v-model="size" placeholder="ex.) mini"/>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="number">number</label>
+              <input  class="form-control" id="number" type="text" v-model="number" placeholder="ex.) 15"/>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+          <div class="form-group">
+            <label for="completed">completed?</label>
+            <input id="completed" type="checkbox" v-model="completed" />
+          </div>
+          </div>
         </p>
         <p>
           <button class="btn btn-success" @click="save">Save</button>
@@ -30,6 +77,7 @@
       </div>
     </div>
   </div>
+    </div>
 </template>
 
 <script>
@@ -98,12 +146,27 @@ export default {
 
 <style>
 
-.tool > i {
-  margin-left: 15px;
+.tool {
+  padding-left: 0px;
+}
+
+.right {
+float:right;
+}
+
+.cush {
+  padding-left: 80px;
 }
 
 .panel {
 padding: 10px;
-margin: none;
+margin: 15px;
 }
+
+.bold {
+font-weight: 800;
+
+}
+
+
 </style>
