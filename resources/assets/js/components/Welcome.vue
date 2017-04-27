@@ -3,7 +3,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <!--<div class="ok" v-show="ok"> -->
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">  <img style="width:50px;" src="remove.png"></span>
     </button>
     <img class = "pic" src = "logo.png">
     <h1 class="name"> OrderUp! </h1>
@@ -40,12 +40,13 @@ padding-top: 10px;
 }
 .pic{
   width: 200px;
+  padding-left: 50px;
   text-align: center;
   align-items: center;
 }
 .Welcome {
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   text-align: center;
 }
 p {
@@ -54,6 +55,9 @@ p {
   padding-right: 20%;
   padding-top: 20px;
   font-size: 15px;
-
 }
+.close {
+  size: 40px;
+}
+
 </style>

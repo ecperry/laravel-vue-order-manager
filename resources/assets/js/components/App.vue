@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   <div class="container">
-    <Welcome></Welcome>
+    <Welcome class="alert"></Welcome>
     <Top></Top>
     <OrderForm @created="fetch"></OrderForm>
 
