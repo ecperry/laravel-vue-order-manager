@@ -94,6 +94,9 @@ export default {
       customer: this.order.customer,
       deadline: this.order.deadline,
       flavor: this.order.flavor,
+      number: this.order.number,
+      size: this.order.size,
+      completed: this.order.completed,
       editing: false,
       loading: false
     }
@@ -168,14 +171,16 @@ margin: 15px;
 
 .bold {
 font-weight: 800;
-color: red;
+color: #BA4620;
 
 }
 
 .done {
-color: green;
+color:  #3FABA4;
 font-weight: 900;
 }
 
-
+.panel-default {
+border-color: #F57B31;
+}
 </style>

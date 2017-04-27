@@ -8,8 +8,7 @@
     <title>Style Guide</title>
 </head>
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:700||Open+Sans|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <div id="style">
     <div class="Top">
     <a class="bottom" href="../">
@@ -24,19 +23,19 @@
   <div class="content">
     <div class="row">
     <div class= "col-sm-3 color1">
-      <p>HEX #F40643</p>
+      <p>HEX #7A241E</p>
     </div>
     <div class= "col-sm-3 color2">
-      <p class="white">HEX #F567B2</p>
+      <p class="white">HEX #BA4620</p>
     </div>
     <div class= "col-sm-3 color3">
-      <p class="white">HEX #FDDFF2</p>
+      <p class="white">HEX #F57B31</p>
     </div>
     <div class= "col-sm-3 color4">
-      <p class="white">HEX #04DADA</p>
+      <p class="white">HEX #3FABA4</p>
     </div>
     <div class= "col-sm-3 color5">
-      <p class="white">HEX #CCFAFA</p>
+      <p class="white">HEX #75BAB5</p>
     </div>
     <div class= "col-sm-3 color6">
       <p class="white">HEX #FFFFFF</p>
@@ -68,8 +67,8 @@
       <br>
       <br>
     </h2>
-    <h1 class= "Lato"> LATO</h1>
-    <h2 class = "Lato"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+    <h1 class= "Open">OPEN SANS</h1>
+    <h2 class = "Open"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
       <br>
       a b c d e f g h i j k l m n o p q r s t u v w x y z
       <br>
@@ -194,7 +193,6 @@
 <div class = "row">
 <div class = "col-lg-12">
 <div class="Bottom">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
   <div class="links">
     <a class="bottom" href="https://www.emilythecopywriter.com">Portfolio</a>
     <a class="bottom" href="https://ecperry.gitbooks.io/orderup-api-documentation/">API Documentation</a>
@@ -223,22 +221,22 @@
 @import url(https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One);@charset "UTF-8";
 
 .color1 {
-  background-color: #F40643;
+  background-color: #7A241E;
 }
 .color2 {
-  background-color: #F567B2;
+  background-color: #BA4620;
 }
 
 .color3 {
-  background-color: #FDDFF2;
+  background-color: #F57B31;
 }
 
 .color4 {
-  background-color: #04DADA;
+  background-color: #3FABA4;
 }
 
 .color5{
-  background-color: #CCFAFA;
+  background-color: #75BAB5;
   color: black;
 }
 
@@ -263,7 +261,7 @@
   margin: 15px 15px 15px 15px;
   border-radius: 5px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
 }
 .color1 , .color2 , .color3, .color4, .color7, .color8, .color9 {
 color: white;
@@ -330,8 +328,10 @@ a :hover {
 }
 
 h1 {
+  font-family: 'Francois One', sans-serif;
 }
 h2 {
+  font-family: 'Francois One', sans-serif;
 }
 h3 {
 }
@@ -361,7 +361,11 @@ ul {
 }
 ol {
 }
+.Open {
+  font-size: 20pt;
+  font-family: 'Open Sans', sans-serif;
 
+}
 
 
 </style>

@@ -33,10 +33,12 @@ font-size: 60px ;
 text-align: center;
 font-family: 'Francois One', sans-serif;
 padding-top: 10px;
+
 }
 .tag {
   font-size: 20px ;
   text-align: center;
+
 }
 .pic{
   width: 200px;
@@ -54,10 +56,19 @@ p {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
 }
 .close {
   size: 40px;
 }
+
+h2 {
+  font-size: 36px;
+  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 </style>

@@ -89,4 +89,9 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0
 }
+.container  {
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
 </style>

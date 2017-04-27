@@ -134,6 +134,13 @@ float: right;
 
 .btn {
   margin-bottom: 30px;
+  background-color:  #3FABA4;
+  border-color:  #3FABA4;
 
+}
+
+.btn-primary:hover {
+  background-color: #75BAB5;
+  border-color:  #75BAB5;
 }
 </style>
