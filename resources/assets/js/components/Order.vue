@@ -186,5 +186,13 @@ font-family: 'Francois One', sans-serif;
 border-color: #F57B31;
 }
 
+.btn-success {
+background-color: #F57B31;
+}
+
+.btn-default{
+  font-size: 14pt;
+}
+
 
 </style>

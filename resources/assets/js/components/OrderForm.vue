@@ -128,10 +128,6 @@ padding-bottom: 5px;
 border-radius: 3px;
 }
 
-btn-primary {
-float: right;
-}
-
 .btn {
   margin-bottom: 30px;
   background-color:  #78909C;
