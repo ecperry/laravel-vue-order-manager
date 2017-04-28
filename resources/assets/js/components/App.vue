@@ -8,7 +8,7 @@
     <div v-show="orders.length > 0">
       <Order v-for="(customer, index) in orders" :key="index" :order="customer" @updated="update" @deleted="remove(index)"></Order>
     </div>
-    <p v-show="orders.length === 0">You do not have any orders yet.</p>
+    <p class="message" v-show="orders.length === 0">You do not have any orders yet.</p>
 
     <Bottom></Bottom>
 
@@ -93,5 +93,9 @@ export default {
 
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 200;
+}
+
+.message {
+  font-size: 16pt;
 }
 </style>

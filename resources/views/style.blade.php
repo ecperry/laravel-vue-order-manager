@@ -8,13 +8,18 @@
     <title>Style Guide</title>
 </head>
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:700||Open+Sans+Condensed:300|Francois+One|Jura:600|Russo+One" rel="stylesheet">
-    <div id="style">
-    <div class="Top">
-    <a class="bottom" href="../">
-    <img class = "logo" src = "logo.png">
-    </a>
+  <div class="Top">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
+<div class ="row">
+  <a href= "../">
+    <img class = "logo col-sm-2" src = "logo.png">
+  </a>
+    <div class= "col-sm-6">
     <h1 class="title"> OrderUp!</h1>
+    <h2 class ="subtitle"> serve it better </h2>
+  </div>
+    </div>
+
   </div>
 
   <div class="left">
@@ -38,13 +43,13 @@
       <p class="white">HEX #F57B31</p>
     </div>
     <div class= "col-sm-3 color6">
-      <p class="white">HEX #FFFFFF</p>
+      <p >HEX #FFFFFF</p>
     </div>
     <div class= "col-sm-3 color7">
       <p class="white">HEX #000000</p>
     </div>
     <div class= "col-sm-3 color8">
-      <p class="white">HEX #636b6f</p>
+      <p class="white">HEX #636B6F</p>
     </div>
     <div class= "col-sm-3 color9">
       <p class="white">HEX #D3D3D3</p>
@@ -367,5 +372,32 @@ ol {
 
 }
 
+.title {
+font-size: 36pt ;
+text-align: left;
+font-family: 'Francois One', sans-serif;
+padding-top: 20px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+.subtitle {
+  font-size: 18pt ;
+  text-align: left;
+  padding-left: 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+}
+.logo {
+    width: 200px;
+    text-align: left;
+}
+.Top {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.white {
+  color: white;
+
+}
 
 </style>

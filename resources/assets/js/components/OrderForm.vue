@@ -113,10 +113,6 @@ export default {
 </script>
 
 <style scoped>
-label {
-font-weight: lighter;
-}
-
 h3 {
 font-family: 'Francois One', sans-serif;
 text-align: left;
@@ -137,12 +133,13 @@ border-radius: 3px;
 }
 
 .btn-primary:hover {
-  background-color: #5C6D78;
-  border-color:  #5C6D78;
+  background-color: #BEE1F7;
+  border-color:  #BEE1F7;
 }
 
 label {
   font-size: 16pt;
+  font-weight: lighter;
 }
 .form-control:focus {
   border-color: #78909C;

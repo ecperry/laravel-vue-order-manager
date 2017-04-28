@@ -16,15 +16,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .links {
 color: grey;
 text-align: center;
+font-size: 12pt;
 }
 
 .links :hover {
 text-decoration: none;
-color: black;
+color: #5C6D78;
 }
 
 .bottom {

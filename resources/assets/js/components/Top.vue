@@ -2,8 +2,8 @@
   <div class="Top">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
 <div class ="row">
-    <img class = "logo col-md-2" src = "logo.png">
-    <div class= "col-md-10">
+    <img class = "logo col-sm-2" src = "logo.png">
+    <div class= "col-sm-6">
     <h1 class="title"> OrderUp!</h1>
     <h2 class ="subtitle"> serve it better </h2>
   </div>
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .title {
 font-size: 36pt ;
 text-align: left;
@@ -30,12 +30,29 @@ margin-bottom: 0px;
   font-size: 18pt ;
   text-align: left;
   padding-left: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
 }
 .logo {
-  width: 100px;
-  float: left;
+    width: 200px;
+    text-align: left;
 }
 .Top {
-  padding-bottom: 5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
+
+h2 {
+  font-size: 18pt ;
+  text-align: left;
+  padding-left: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+}
+
+.row {
+padding-bottom: none;
+margin-bottom: none;
+}
+
 </style>

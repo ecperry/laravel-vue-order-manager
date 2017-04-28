@@ -3,13 +3,21 @@
   <div class="Order panel panel-default">
 <div class="row">
   <div class="panel-heading">
-      <div class="col-md-11">
+      <div class="col-sm-10">
         <h3></h3>
         <h3 v-show="!editing">{{ this.customer }}</h3>
+        <div class="live" v-show="!editing">
+          <p class="bold" v-if="!completed">DUE  {{ order.deadline }}</p>
+        </div>
+        <div class="live" v-show="!editing">
+        <div v-if="completed">
+          <p class = "done"> COMPLETED! </p>
+        </div>
+        </div>
       </div>
       </div>
 
-    <div class="col-md-1 cush">
+    <div class="col-sm-2 cush">
       <a class="tool " href="#" @click.prevent="editing = true" v-show="!editing">
         <img style="width:20px;" src="edit.png">
       </a>
@@ -21,13 +29,7 @@
       </div>
 
     <div class="panel-body">
-      <div class="live" v-show="!editing">
-        <p class="bold" v-if="!completed">DUE  {{ order.deadline }}</p>
 
-      </div>
-      <div v-if="completed">
-        <p class = "done"> COMPLETED! </p>
-      </div>
 
       <div class="editing" v-show="editing">
         <p>
@@ -74,8 +76,8 @@
           </div>
         </p>
         <p>
-          <button class="btn btn-success" @click="save">Save</button>
-          <button class="btn btn-default" @click="cancel">Cancel</button>
+          <button class="btn btn-save" @click="save">save</button>
+          <button class="btn btn-default" @click="cancel">cancel</button>
         </p>
       </div>
     </div>
@@ -150,7 +152,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .tool {
   padding-left: 0px;
@@ -161,7 +163,8 @@ float:right;
 }
 
 .cush {
-  padding-left: 80px;
+  padding-left: 10%;
+
 }
 
 .panel {
@@ -170,29 +173,67 @@ margin: 15px;
 }
 
 .bold {
-font-weight:;
+font-weight:lighter;
 color: #BA4620;
-font-size: 12pt;
+font-size: 14pt;
 font-family: 'Francois One', sans-serif;
+
 }
 
 .done {
 color:  #F57B31;
-font-size: 12pt;
+font-size: 14pt;
 font-family: 'Francois One', sans-serif;
+font-weight:lighter;
 }
 
-.panel-default {
-border-color: #F57B31;
+
+.btn-save {
+  background-color:  #78909C;
+  border-color: #78909C;
+  color: white;
+  margin-left: 10px;
+  font-size: 14pt;
+  padding-right: 30px;
+  padding-left: 30px;
+
 }
 
-.btn-success {
-background-color: #F57B31;
+.btn-save:hover {
+  background-color: #BEE1F7;
+  border-color: #BEE1F7;
+  color: white;
+
 }
 
+label {
+  font-size: 16pt;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 18pt;
+  font-weight: lighter;
+
+}
 .btn-default{
   font-size: 14pt;
+  border-color: #636b6f;
+  background-color: #636b6f;
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 10px;
 }
 
+.btn-default:hover {
+  border-color: #D3D3D3;
+  background-color: #D3D3D3;
+  color: #636b6f;
+}
+
+.form-control:focus {
+  border-color: #78909C;
+}
 
 </style>
