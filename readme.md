@@ -1,4 +1,4 @@
-<p align="center"><img src="![alt text](https://raw.githubusercontent.com/ecperry/laravel-vue-order-manager/public/to/logo.png)"></p>
+<p align="center"><img src="![alt text](https://raw.githubusercontent.com/ecperry/laravel-vue-order-manager/public/path/to/logo.png)"></p>
 
 ## About OrderUp!
 
