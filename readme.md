@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="![alt text](https://raw.githubusercontent.com/ecperry/order-manager/public/to/logo.png)"></p>
 
 ## About OrderUp!
 

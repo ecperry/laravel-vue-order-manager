@@ -72,7 +72,7 @@
       <br>
       <br>
     </h2>
-    <h1 class= "Open">OPEN SANS</h1>
+    <h1 class= "Open">OPEN SANS CONDENSED</h1>
     <h2 class = "Open"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
       <br>
       a b c d e f g h i j k l m n o p q r s t u v w x y z
@@ -95,25 +95,22 @@
     <h5> Header 5 </h5>
     <br>
       <p class="lead"> p.lead </p>
-      <p class="lead">People, even more than things, have to be restored, renewed, revived,
-      reclaimed, and redeemed; never throw out anyone.
+      <p class="lead">
+        Eating is a necessity, but cooking is an art.
       </p>
       <p> p</p>
       <p>
-        WithIt is a contact manager for smart, savvy, stylish millennial women.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        In the food business, 'just okay' won't cut it. OrderUp! makes tracking
+        orders and managing customers easier, so you can focus on what you love
+        — great tasting food.
       </p>
     <br>
       <p class="light"> p.light </p>
       <p class="light">
-        Get WithIt to keep up with all the people you meet and friends you make.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Started by a baker with a home cupcake business and a knack for coding,
+        OrderUp! helps small food business owners manage and track orders
+        through a simple digital interface, without having to deal with the
+        messy backend of a database.
       </p>
     </div>
 
@@ -122,10 +119,10 @@
     </div>
 
     <div class ="content">
-    <button class="btn btn-sm delete">small button</button>
+    <button class="btn btn-sm small">small button</button>
     <br>
     <br>
-    <button class="btn btn-md new">medium button</button>
+    <button class="btn btn-md medium">medium button</button>
     <br>
     <br>
     <button class="btn btn-lg large">large button</button>
@@ -221,7 +218,7 @@
     <script src="{{ mix('js/app.js') }}"></script>
 
 
-<style>
+<style scoped>
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One);@charset "UTF-8";
 
@@ -263,7 +260,7 @@
 }
 .color1 , .color2 , .color3, .color4, .color5, .color6, .color7, .color8, .color9 {
   padding: 50px 30px 30px 30px;
-  margin: 15px 15px 15px 15px;
+  margin: 15px 30px 15px 15px;
   border-radius: 5px;
   text-align: center;
   font-family: 'Open=', sans-serif;
@@ -273,7 +270,7 @@ color: white;
 }
 
 .left {
-  padding-left: 5%;
+  padding-left: 8%;
 }
 
 .content {
@@ -339,22 +336,78 @@ h2 {
   font-family: 'Francois One', sans-serif;
 }
 h3 {
+  font-weight: bold;
 }
 h4 {
 }
 h5 {
 }
 p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14pt;
+
 }
 p.lead {
+  font-family: 'Francois One', sans-serif;
+  font-size: 14pt;
+
 }
 p.light {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+  font-size: 14pt;
+
 }
 .small {
+  font-size: 10pt;
+  border-color: #636b6f;
+  background-color: #636b6f;
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 10px;
+}
+
+.small:hover {
+  border-color: #D3D3D3;
+  background-color: #D3D3D3;
+  color: #636b6f;
 }
 .medium {
+  background-color:  #78909C;
+  border-color: #78909C;
+  color: white;
+  margin-left: 10px;
+  font-size: 12pt;
+  padding-right: 30px;
+  padding-left: 30px;
 }
+.medium:hover {
+  background-color: #BEE1F7;
+  border-color: #BEE1F7;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: #78909C;
+}
+
 .large {
+  background-color: #BEE1F7;
+  border-color: #BEE1F7;
+  color:#636b6f;
+  margin-left: 10px;
+  font-size: 18pt;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 5px;
+}
+
+.large:hover {
+  background-color: #636b6f;
+  border-color: #636b6f;
+  color: white;
+
 }
 .text {
 }
@@ -367,8 +420,9 @@ ul {
 ol {
 }
 .Open {
-  font-size: 20pt;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
 
 }
 
@@ -393,11 +447,11 @@ margin-bottom: 0px;
 }
 .Top {
   padding-bottom: 1%;
-  padding-top: 1%;
+  padding-top: 3%;
 }
 .white {
   color: white;
-
 }
+
 
 </style>

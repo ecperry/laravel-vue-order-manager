@@ -10,14 +10,17 @@
     <h2 class ="tag"> serve it better </h2>
     <p> In the food business, 'just okay' won't cut it.
       OrderUp! makes tracking orders and managing customers
-      easier, so you can focus on what you love — great tasting food.
-    </p>
-    <p>
+      easier, so you can focus on what you love — great tasting food
       Started by a baker with a home cupcake business and a knack for
       coding, OrderUp! helps small food business owners manage and
-      track orders through a simple digital interface, without having to deal with the messy
-      backend of a database.
+      track orders through a simple digital interface.
     </p>
+    <p>To begin, fill out the information for your cupcake or dessert order under the "create a new order header."
+      Be sure your form inputs match the type shown in the placeholder text. After you press the "create order"
+      button, your order will appear in the "orders" list below. Use the pencil icon to edit orders and the "x" icon
+      to remove an order from your list. Happy baking!
+    </p>
+
   </div>
   <!---</div> -->
 </template>
@@ -29,7 +32,7 @@ export default {
 
 <style scoped>
 .name {
-font-size: 48pt ;
+font-size: 40pt ;
 text-align: center;
 font-family: 'Francois One', sans-serif;
 padding-top: 10px;
@@ -53,8 +56,8 @@ padding-top: 10px;
 }
 p {
   text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 20px;
   font-size: 14pt;
   font-family: 'Open Sans Condensed', sans-serif;
