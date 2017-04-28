@@ -8,7 +8,7 @@
     <title>Style Guide</title>
 </head>
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:700||Open+Sans|Francois+One|Jura:600|Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:700||Open+Sans+Condensed:300|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <div id="style">
     <div class="Top">
     <a class="bottom" href="../">
@@ -23,19 +23,19 @@
   <div class="content">
     <div class="row">
     <div class= "col-sm-3 color1">
-      <p>HEX #7A241E</p>
+      <p>HEX #5C6D78</p>
     </div>
     <div class= "col-sm-3 color2">
-      <p class="white">HEX #BA4620</p>
+      <p class="white">HEX #78909C</p>
     </div>
     <div class= "col-sm-3 color3">
-      <p class="white">HEX #F57B31</p>
+      <p class="white">HEX #BEE1F7 </p>
     </div>
     <div class= "col-sm-3 color4">
-      <p class="white">HEX #3FABA4</p>
+      <p class="white">HEX #BA4620</p>
     </div>
     <div class= "col-sm-3 color5">
-      <p class="white">HEX #75BAB5</p>
+      <p class="white">HEX #F57B31</p>
     </div>
     <div class= "col-sm-3 color6">
       <p class="white">HEX #FFFFFF</p>
@@ -44,7 +44,7 @@
       <p class="white">HEX #000000</p>
     </div>
     <div class= "col-sm-3 color8">
-      <p class="white">HEX #808080</p>
+      <p class="white">HEX #636b6f</p>
     </div>
     <div class= "col-sm-3 color9">
       <p class="white">HEX #D3D3D3</p>
@@ -221,22 +221,22 @@
 @import url(https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One);@charset "UTF-8";
 
 .color1 {
-  background-color: #7A241E;
+  background-color: #5c6d78;
 }
 .color2 {
-  background-color: #BA4620;
+  background-color: #78909c;
 }
 
 .color3 {
-  background-color: #F57B31;
+  background-color:#bee1f7 ;
 }
 
 .color4 {
-  background-color: #3FABA4;
+  background-color: #BA4620;
 }
 
 .color5{
-  background-color: #75BAB5;
+  background-color: #F57B31;
   color: black;
 }
 
@@ -261,7 +261,7 @@
   margin: 15px 15px 15px 15px;
   border-radius: 5px;
   text-align: center;
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Open=', sans-serif;
 }
 .color1 , .color2 , .color3, .color4, .color7, .color8, .color9 {
 color: white;
@@ -275,7 +275,7 @@ color: white;
   padding-left: 20%;
 
 }
-
+{
 font-size: 48px ;
 text-align: left;
 font-family: 'Francois One', sans-serif;

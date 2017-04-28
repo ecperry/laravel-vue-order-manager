@@ -1,6 +1,6 @@
 <template>
   <div class="Welcome" data-dismiss="alert">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One|Open+Sans+Condensed:300" rel="stylesheet">
     <!--<div class="ok" v-show="ok"> -->
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">  <img style="width:50px;" src="remove.png"></span>
@@ -29,14 +29,14 @@ export default {
 
 <style scoped>
 .name {
-font-size: 60px ;
+font-size: 48pt ;
 text-align: center;
 font-family: 'Francois One', sans-serif;
 padding-top: 10px;
 
 }
 .tag {
-  font-size: 20px ;
+  font-size: 18pt ;
   text-align: center;
 
 }
@@ -56,18 +56,16 @@ p {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20px;
-  font-size: 18px;
-  font-weight: 200;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .close {
   size: 40px;
 }
 
 h2 {
-  font-size: 36px;
-  font-weight: 200;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 

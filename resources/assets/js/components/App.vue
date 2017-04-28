@@ -91,7 +91,7 @@ export default {
 }
 .container  {
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 200;
 }
 </style>

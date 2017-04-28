@@ -1,9 +1,13 @@
 <template>
   <div class="Top">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
-    <img class = "logo" src = "logo.png">
+<div class ="row">
+    <img class = "logo col-md-2" src = "logo.png">
+    <div class= "col-md-10">
     <h1 class="title"> OrderUp!</h1>
     <h2 class ="subtitle"> serve it better </h2>
+  </div>
+    </div>
 
   </div>
 </template>
@@ -15,16 +19,17 @@ export default {
 
 <style>
 .title {
-font-size: 48px ;
+font-size: 36pt ;
 text-align: left;
 font-family: 'Francois One', sans-serif;
-padding-top: 10px;
+padding-top: 20px;
 padding-bottom: 0px;
 margin-bottom: 0px;
 }
 .subtitle {
-  font-size: 18px ;
+  font-size: 18pt ;
   text-align: left;
+  padding-left: 25px;
 }
 .logo {
   width: 100px;

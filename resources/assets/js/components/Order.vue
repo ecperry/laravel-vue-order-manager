@@ -170,17 +170,21 @@ margin: 15px;
 }
 
 .bold {
-font-weight: 800;
+font-weight:;
 color: #BA4620;
-
+font-size: 12pt;
+font-family: 'Francois One', sans-serif;
 }
 
 .done {
-color:  #3FABA4;
-font-weight: 900;
+color:  #F57B31;
+font-size: 12pt;
+font-family: 'Francois One', sans-serif;
 }
 
 .panel-default {
 border-color: #F57B31;
 }
+
+
 </style>

@@ -120,7 +120,7 @@ font-weight: lighter;
 h3 {
 font-family: 'Francois One', sans-serif;
 text-align: left;
-background-color: darkgrey;
+background-color: #808080;
 color: white;
 padding-left: 15px;
 padding-top: 5px;
@@ -134,13 +134,22 @@ float: right;
 
 .btn {
   margin-bottom: 30px;
-  background-color:  #3FABA4;
-  border-color:  #3FABA4;
+  background-color:  #78909C;
+  border-color: #78909C  ;
+  font-size: 14pt;
 
 }
 
 .btn-primary:hover {
-  background-color: #75BAB5;
-  border-color:  #75BAB5;
+  background-color: #5C6D78;
+  border-color:  #5C6D78;
 }
+
+label {
+  font-size: 16pt;
+}
+.form-control:focus {
+  border-color: #78909C;
+}
+
 </style>
