@@ -1,18 +1,19 @@
 <template>
+  <!-- The order vue component controls the list of orders as they're created-->
   <div class="Order">
   <div class="Order panel panel-default">
 <div class="row">
   <div class="panel-heading">
       <div class="col-sm-10">
         <h3></h3>
-        <h3 v-show="!editing">{{ this.customer }}</h3>
-        <div class="live" v-show="!editing">
-          <p class="bold" v-if="!completed">DUE  {{ order.deadline }}</p>
-        </div>
-        <div class="live" v-show="!editing">
-        <div v-if="completed">
-          <p class = "done"> COMPLETED! </p>
-        </div>
+          <h3 v-show="!editing">{{ this.customer }}</h3>
+            <div class="live" v-show="!editing">
+              <p class="bold" v-if="!completed">DUE  {{ order.deadline }}</p>
+            </div>
+          <div class="live" v-show="!editing">
+            <div v-if="completed">
+              <p class = "done"> COMPLETED! </p>
+            </div>
         </div>
       </div>
       </div>
@@ -153,68 +154,13 @@ export default {
 </script>
 
 <style scoped>
-
-.tool {
-  padding-left: 0px;
-}
-
-.right {
-float:right;
-}
-
-.cush {
-  padding-left: 10%;
-
-}
-
-.panel {
-padding: 10px;
-margin: 15px;
-}
-
-.bold {
-font-weight:lighter;
-color: #BA4620;
-font-size: 14pt;
-font-family: 'Francois One', sans-serif;
-
-}
-
-.done {
-color:  #F57B31;
-font-size: 14pt;
-font-family: 'Francois One', sans-serif;
-font-weight:lighter;
-}
-
-
-.btn-save {
-  background-color:  #78909C;
-  border-color: #78909C;
-  color: white;
-  margin-left: 10px;
-  font-size: 14pt;
-  padding-right: 30px;
-  padding-left: 30px;
-
-}
-
-.btn-save:hover {
-  background-color: #BEE1F7;
-  border-color: #BEE1F7;
-  color: white;
-
-}
-
-label {
-  font-size: 16pt;
-  font-weight: lighter;
-}
-
 h3 {
   font-size: 18pt;
   font-weight: lighter;
-
+}
+label {
+  font-size: 16pt;
+  font-weight: lighter;
 }
 .btn-default{
   font-size: 14pt;
@@ -225,15 +171,51 @@ h3 {
   padding-left: 30px;
   margin-left: 10px;
 }
-
 .btn-default:hover {
   border-color: #D3D3D3;
   background-color: #D3D3D3;
   color: #636b6f;
 }
-
+.btn-save {
+  background-color:  #78909C;
+  border-color: #78909C;
+  color: white;
+  margin-left: 10px;
+  font-size: 14pt;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.btn-save:hover {
+  background-color: #BEE1F7;
+  border-color: #BEE1F7;
+  color: white;
+}
+.bold {
+font-weight:lighter;
+color: #BA4620;
+font-size: 14pt;
+font-family: 'Francois One', sans-serif;
+}
+.cush {
+  padding-left: 10%;
+}
+.done {
+color:  #F57B31;
+font-size: 14pt;
+font-family: 'Francois One', sans-serif;
+font-weight:lighter;
+}
 .form-control:focus {
   border-color: #78909C;
 }
-
+.right {
+float:right;
+}
+.tool {
+  padding-left: 0px;
+}
+.panel {
+padding: 10px;
+margin: 15px;
+}
 </style>

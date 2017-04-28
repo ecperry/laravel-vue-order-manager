@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--This view hosts the style guid, accessible at the /style URL -->
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="utf-8">

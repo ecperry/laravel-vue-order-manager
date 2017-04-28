@@ -1,14 +1,13 @@
 <template>
   <div class="Top">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
-<div class ="row">
-    <img class = "logo col-sm-2" src = "logo.png">
-    <div class= "col-sm-6">
-    <h1 class="title"> OrderUp!</h1>
-    <h2 class ="subtitle"> serve it better </h2>
-  </div>
+    <div class ="row">
+      <img class = "logo col-sm-2" src = "logo.png">
+        <div class= "col-sm-6">
+        <h1 class="title"> OrderUp!</h1>
+        <h2 class ="subtitle"> serve it better </h2>
+        </div>
     </div>
-
   </div>
 </template>
 
@@ -18,15 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.title {
-font-size: 36pt ;
-text-align: left;
-font-family: 'Francois One', sans-serif;
-padding-top: 20px;
-padding-bottom: 0px;
-margin-bottom: 0px;
-}
-.subtitle {
+h2 {
   font-size: 18pt ;
   text-align: left;
   padding-left: 25px;
@@ -37,22 +28,28 @@ margin-bottom: 0px;
     width: 200px;
     text-align: left;
 }
-.Top {
-  padding-bottom: 1%;
-  padding-top: 1%;
+.row {
+padding-bottom: none;
+margin-bottom: none;
 }
-
-h2 {
+.subtitle {
   font-size: 18pt ;
   text-align: left;
   padding-left: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: lighter;
 }
-
-.row {
-padding-bottom: none;
-margin-bottom: none;
+.title {
+font-size: 36pt ;
+text-align: left;
+font-family: 'Francois One', sans-serif;
+padding-top: 20px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+.Top {
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
 
 </style>

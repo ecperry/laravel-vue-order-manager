@@ -1,4 +1,5 @@
 <template>
+<!--OrderForm is a vue component that holds the form structure for creating a new order and sending the information to the database-->
   <div class="OrderForm">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One" rel="stylesheet">
     <h3>create a new order</h3>
@@ -123,23 +124,19 @@ padding-top: 5px;
 padding-bottom: 5px;
 border-radius: 3px;
 }
-
+label {
+  font-size: 16pt;
+  font-weight: lighter;
+}
 .btn {
   margin-bottom: 30px;
   background-color:  #78909C;
   border-color: #78909C  ;
   font-size: 14pt;
-
 }
-
 .btn-primary:hover {
   background-color: #BEE1F7;
   border-color:  #BEE1F7;
-}
-
-label {
-  font-size: 16pt;
-  font-weight: lighter;
 }
 .form-control:focus {
   border-color: #78909C;

@@ -1,4 +1,5 @@
 <template>
+  <!-- This component is a collapsible info modal that gives the viewer guidance on how to use the app -->
   <div class="Welcome" data-dismiss="alert">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700|Francois+One|Jura:600|Russo+One|Open+Sans+Condensed:300" rel="stylesheet">
     <!--<div class="ok" v-show="ok"> -->
@@ -31,28 +32,9 @@ export default {
 </script>
 
 <style scoped>
-.name {
-font-size: 40pt ;
-text-align: center;
-font-family: 'Francois One', sans-serif;
-padding-top: 10px;
-
-}
-.tag {
-  font-size: 18pt ;
-  text-align: center;
-
-}
-.pic{
-  width: 200px;
-  padding-left: 50px;
-  text-align: center;
-  align-items: center;
-}
-.Welcome {
-  padding-top: 5%;
-  padding-bottom: 10%;
-  text-align: center;
+h2 {
+  font-size: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 p {
   text-align: left;
@@ -65,11 +47,25 @@ p {
 .close {
   size: 40px;
 }
-
-h2 {
-  font-size: 40px;
-  font-family: 'Open Sans Condensed', sans-serif;
+.name {
+font-size: 40pt ;
+text-align: center;
+font-family: 'Francois One', sans-serif;
+padding-top: 10px;
 }
-
-
+.pic{
+  width: 200px;
+  padding-left: 50px;
+  text-align: center;
+  align-items: center;
+}
+.tag {
+  font-size: 18pt ;
+  text-align: center;
+}
+.Welcome {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  text-align: center;
+}
 </style>

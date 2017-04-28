@@ -21,6 +21,7 @@
 </template>
 
 <script>
+//importing vue components & axios
 import axios from 'axios';
 import Welcome from './Welcome';
 import Top from './Top';
@@ -29,6 +30,8 @@ import OrderForm from './OrderForm';
 import MainLoader from './MainLoader';
 import Bottom from './Bottom'
 export default {
+
+//calling vue components
   components: {
     Welcome,
     Top,
@@ -36,8 +39,8 @@ export default {
     OrderForm,
     MainLoader,
     Bottom
-
   },
+//data methods
   data () {
     return {
       orders: [],
@@ -47,6 +50,8 @@ export default {
   mounted () {
     this.fetch();
   },
+
+//defining methods
   methods: {
     fetch () {
       console.log('App -> fetch');
@@ -83,18 +88,16 @@ export default {
 #app {
   background-color: white;
 }
+.container  {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 200;
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
 .fade-enter, .fade-leave-to {
   opacity: 0
 }
-.container  {
-
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 200;
-}
-
 .message {
   font-size: 16pt;
 }
