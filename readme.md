@@ -1,5 +1,4 @@
-<p align="center"><img src="![alt text](https://raw.githubusercontent.com/ecperry/laravel-vue-order-manager/public/path/to/logo.png)"></p>
-
+![screen shot 2017-04-28 at 11 05 16 am](https://cloud.githubusercontent.com/assets/16669853/25535972/ef862c4c-2c06-11e7-87c6-ebd4ab4dbb39.png)
 ## About OrderUp!
 
 Welcome to OrderUp!, a front-end solution for managing food orders. Here, you'll find an easy management system to keep track of customers, recipes, and orders.
